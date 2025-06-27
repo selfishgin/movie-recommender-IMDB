@@ -1,0 +1,24 @@
+﻿<Window x:Class="MovieRecommenderIMDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieRecommenderIMDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="Title" Grid.Row="0" Grid.Column="1" Text="IMDB Movie Recommender" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock Name="MovieName" Grid.Row="0" Grid.Column="1" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+        <Button Name="RecommendBtn" Grid.Row="0" Grid.Column="1" Content="Recommend!" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Margin="0 0 0 40" Click="RecommendBtn_Click"/>
+    </Grid>
+</Window>
